@@ -1,9 +1,13 @@
-# Routes
-# This file defines all application routes (Higher priority routes first)
-# ~~~~
+# Rutas del proyecto
 
-# An example controller showing a sample home page
-GET     /                           controllers.HomeController.index()
+# Ruta de inicio
+GET     /index                           controllers.HomeController.index()
 
-# Map static resources from the /public folder to the /assets URL path
+# Ruta para procesar el formulario de contacto
+GET     /contact            controllers.HomeController.contact()
+
+
+# Rutas estáticas para servir archivos en la carpeta public
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+

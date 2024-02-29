@@ -9,15 +9,15 @@ import views.html.*;
  */
 public class HomeController extends Controller {
 
-    /**
-     * An action that renders an HTML page with a welcome message.
-     * The configuration in the <code>routes</code> file means that
-     * this method will be called when the application receives a
-     * <code>GET</code> request with a path of <code>/</code>.
-     */
     public Result index() {
-        String message = "World"; // Define el mensaje que quieres pasar a la vista
-        return ok(index.render(message)); // Pasa el mensaje como argumento a la vista
+        String message = "¡Bienvenido a mi aplicación web con Play Framework!";
+        return ok(index.render(message)); // Pass message to the view
     }
+
+    public Result contact() {
+        String confirmationMessage = "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.";
+        return ok(contact.render(confirmationMessage)); // Pass confirmationMessage to the view
+    }
+
 
 }

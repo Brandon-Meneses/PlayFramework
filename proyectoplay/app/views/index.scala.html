@@ -1,5 +1,10 @@
 @(message: String)
 
-@main("Welcome to Play") {
-<h1>Hello, @message!</h1>
-}
+
+    <div class="container">
+        <h1 class="mt-5">@message</h1>
+        <p class="lead">Bienvenido a nuestra página web.</p>
+        <p><a class="btn btn-primary" href="@routes.HomeController.contact()">Contacto</a></p>
+    </div>
+
+
